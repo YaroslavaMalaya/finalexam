@@ -50,8 +50,8 @@ namespace FinalAPI.Tests
             var result = (await _userService.GetUsersAsync()).ToList();
 
             // Assert
-            Assert.Equal(1, result.Count);
-            Assert.Equal("TestUser", result[0].Nickname);
+            Assert.AreEqual(1, result.Count);
+            Assert.AreEqual("TestUser", result[0].Nickname);
         }
     }
 }
